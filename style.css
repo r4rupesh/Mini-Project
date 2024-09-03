@@ -1,0 +1,190 @@
+*{  
+
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+.main_box{
+    background-image: url(background.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.main_box .btn_one i{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+}
+.sidebar_menu .btn_two i{
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    cursor: pointer;
+
+}
+
+.sidebar_menu{
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255,255, 255,0.1);
+    box-shadow: 0 0 8px rgba(255,255, 255,0.3);
+    left: -300px;
+    transition: all 0.3s linear;
+
+}
+.sidebar_menu .logo{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255,255, 255,0.5);
+    
+}
+
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 25%;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:500 ;
+}
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 10px;
+}
+
+.sidebar_menu .menu a,i{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.sidebar_menu .menu i{
+    padding-right:8px ;
+}
+.sidebar_menu .social_media{
+    position: absolute;
+    left: 20%;
+    bottom:25px;   
+}
+.sidebar_menu .social_media i{
+    color: white;
+    opacity: 0.5;
+    padding: 0 10px;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255,255,255, 0.5);
+}
+#check{
+    display: none;
+}
+
+.btn_one:hover i{
+    font-size: 40px;
+
+    transition: all 0.3s linear;
+}
+.btn_two:hover i{
+    font-size: 30px;
+    transition: all 0.3s linear;
+
+
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+#check:checked ~ .sidebar_menu{
+    left: 0px;
+}
+h1{
+    position: absolute;
+    left: 45%;
+    top: 2%;
+    color:rgba(255,255, 255);
+    animation: h1animation 6s ease-in 0s infinite normal;
+   
+}
+@keyframes h1animation{
+    0%{
+        opacity:0.1 ;
+        font-size: 42px;
+        
+    }
+
+    10%{
+        opacity:0.2 ;
+        font-size: 44px;
+    }
+    20%{
+        opacity:0.3 ;
+        font-size: 46px;
+    }
+    30%{
+        opacity:0.4 ;
+        font-size: 48px;
+    }
+    40%{
+        opacity:0.4 ;
+        font-size:50px ;
+    }
+    50%{
+        opacity:0.5 ;
+        font-size: 52px;
+    }
+    60%{
+        opacity:0.6 ;
+        font-size: 54px;
+    }
+    70%{
+        opacity:0.7 ;
+        font-size: 56px;
+    }
+    80%{
+        opacity:0.8 ;
+        font-size: 58px;
+    }
+    90%{
+        opacity:0.9 ;
+        font-size: 60px;
+    }
+    100%{
+        opacity:1; 
+        font-size: 60px;
+    }
+}
+h3 {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    font-size: 15px;
+    left: 0px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: h3animation 10s ease-in 0s infinite none;
+}
+
+@keyframes h3animation {
+   from {
+       width: 0px;
+       
+   }
+   to {
+       width: 100%;
+   }
+}
+
